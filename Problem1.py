@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plot
 
-
 def DFT(x):
     N = len(x)
     X = np.zeros((N,),dtype=np.complex128)
@@ -29,6 +28,7 @@ freq=n/T
 
 X=DFT(x)
 plot.figure(figsize=(20,6))
+
 # DFT 
 plot.subplot(121)
 plot.stem(freq,abs(X),'b',markerfmt=" ",basefmt="-b")
@@ -41,8 +41,3 @@ plot.stem(freq,abs(IDFT(X)),'b',markerfmt=" ",basefmt="-b")
 plot.ylabel("IDFT Amplitude |X(freq)|")
 plot.xlabel("Freq(Hz)")
 plot.show()
-
-
-
-    
-    
