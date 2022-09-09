@@ -35,7 +35,6 @@ plot.stem(freq,abs(X),'b',markerfmt=" ",basefmt="-b")
 plot.ylabel("DFT Amplitude |X(freq)|")
 plot.xlabel("Freq(Hz)")
 
-
 # IDFT 
 plot.subplot(122)
 plot.stem(freq,abs(IDFT(X)),'b',markerfmt=" ",basefmt="-b")
